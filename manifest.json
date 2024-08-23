@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Upwork Left Menu",
+    "version": "1.0",
+    "description": "Hides the left menu on Upwork.",
+    "permissions": [
+      "activeTab",
+      "declarativeContent",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.upwork.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
